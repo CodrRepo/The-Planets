@@ -1,0 +1,46 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html.lenis, html.lenis body {
+    height: auto;
+  }
+  
+  .lenis.lenis-smooth {
+    scroll-behavior: auto !important;
+  }
+  
+  .lenis.lenis-smooth [data-lenis-prevent] {
+    overscroll-behavior: contain;
+  }
+  
+  .lenis.lenis-stopped {
+    overflow: clip;
+  }
+  
+  .lenis.lenis-smooth iframe {
+    pointer-events: none;
+  }
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.font-barlow{
+  font-family: "Barlow Condensed";
+}
+
+.invert-color {
+    filter: invert(1) hue-rotate(45deg);
+}
+
+.gradient-line {
+    background: #fff;
+    background: linear-gradient(90deg, #fff0 0%, #4b5663 15%, #4b5663 85%, #fff0 100%);
+  }
